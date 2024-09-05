@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    {% load static %}
+    <link rel="stylesheet" type="text/css" href="{% static 'main/css/styles.css' %}">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="navbar-logo">
+            <a href="{% url 'index' %}">
+                <img src="{% static 'main/resource/logo1.png' %}" alt="Logo" class="logo-img">
+            </a>
+        </div>
+        <div class="navbar-links">
+            <a href="{% url 'index' %}">Inicio</a>
+            <a href="{% url 'seguimiento' %}">Seguimiento</a>
+            <span class="navbar-separator"></span> <!-- Separador -->
+        </div>
+    </nav>
+</body>
+</html>

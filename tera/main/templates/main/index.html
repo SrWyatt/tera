@@ -1,0 +1,59 @@
+<!-- main/templates/main/index.html -->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Inicio</title>
+    {% load static %}
+    <link rel="icon" href="{% static 'main/resource/teraFavicon.png' %}" type="image/png">
+    <link rel="stylesheet" type="text/css" href="{% static 'main/css/styles.css' %}">
+</head>
+<body background="171718">
+    {% include 'main/navbar.html' %}
+    
+    <!-- Primera sección con imagen de fondo -->
+    <div class="header-section">
+        <!-- Carrusel incrustado -->
+        <div class="carousel-container">
+            <div class="carousel-slide">
+                <img src="{% static 'main/resource/rep_icon.png' %}" alt="Reparar Icon" class="logo">
+                <img src="{% static 'main/resource/res_icon.png' %}" alt="Resolver Icon" class="logo">
+                <img src="{% static 'main/resource/ren_icon.png' %}" alt="Renovar Icon" class="logo">
+            </div>
+            <div class="carousel-buttons">
+                <button class="carousel-button prev">&#10094;</button>
+                <button class="carousel-button next">&#10095;</button>
+            </div>
+        </div>
+    </div>
+
+    <br><br><br>
+
+    <!-- Sección nueva con imagen y texto -->
+    <section class="content-section">
+        <div class="image-container">
+            <img src="{% static 'main/resource/rec_1.png' %}" alt="Recurso 1">
+        </div>
+        <div class="text-container">
+            <h1>¿Quienes somos?</h1>
+            <div class="card">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed fringilla magna urna, sit amet euismod leo dapibus sit amet. Nam egestas lorem mauris. Curabitur et malesuada odio. Phasellus sollicitudin purus eu lacus sollicitudin convallis. Donec quis luctus ipsum. Fusce eget hendrerit elit. Nullam in suscipit justo. Proin nibh ipsum, fringilla in urna eu, tristique vestibulum risus. Pellentesque vel mi vel sapien condimentum scelerisque. Quisque vel mi mauris. Proin lobortis felis vitae sapien maximus, sit amet imperdiet elit egestas. Pellentesque eget libero quis mauris maximus pellentesque non molestie arcu. Fusce id porttitor nulla, vel facilisis arcu. In non lectus ullamcorper, rutrum odio ac, lobortis velit. Pellentesque eget quam bibendum, bibendum lorem ac, tincidunt diam. Nulla cursus tincidunt orci, et accumsan mi consectetur vitae.</p>
+            </div>
+        </div>
+    </section>
+    <br><br>
+    <section class="content-section">
+        <div class="image-container">
+            <img src="{% static 'main/resource/rec_1.png' %}" alt="Recurso 1">
+        </div>
+        <div class="text-container">
+            <h1>¿Quienes somos?</h1>
+            <div class="card">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed fringilla magna urna, sit amet euismod leo dapibus sit amet. Nam egestas lorem mauris. Curabitur et malesuada odio. Phasellus sollicitudin purus eu lacus sollicitudin convallis. Donec quis luctus ipsum. Fusce eget hendrerit elit. Nullam in suscipit justo. Proin nibh ipsum, fringilla in urna eu, tristique vestibulum risus. Pellentesque vel mi vel sapien condimentum scelerisque. Quisque vel mi mauris. Proin lobortis felis vitae sapien maximus, sit amet imperdiet elit egestas. Pellentesque eget libero quis mauris maximus pellentesque non molestie arcu. Fusce id porttitor nulla, vel facilisis arcu. In non lectus ullamcorper, rutrum odio ac, lobortis velit. Pellentesque eget quam bibendum, bibendum lorem ac, tincidunt diam. Nulla cursus tincidunt orci, et accumsan mi consectetur vitae.</p>
+            </div>
+        </div>
+    </section>
+
+    {% include 'main/footer.html' %}
+    <script src="{% static 'main/scripts/scripts.js' %}"></script>
+</body>
+</html>

@@ -1,0 +1,6 @@
+serial,fechaRecibido,EstimadoEntrega,Estado,Descripción
+123,30 de julio de 2024,El resultado del diagnóstico determinará el tiempo estimado para la entrega del equipo,🔴 Diagnosticando,Se está diagnosticando el problema.
+124,1 de agosto de 2024,11 de agosto de 2024,🟡 En revisión,Se está interviniendo el equipo.
+125,3 de agosto de 2024,El resultado del diagnóstico determinará el tiempo estimado para la entrega del equipo,🔴 Diagnosticando,Se está diagnosticando el problema.
+126,9 de octubre de 2024,12 de octubre de 2024,🟡 Ensamblando,El ensamblaje está en progreso.
+127,12 de diciembre de 2024,Espera a que inicie el procedimiento para saber el tiempo estimado para recoger este equipo,🔴 No iniciado,El proceso no ha comenzado.
