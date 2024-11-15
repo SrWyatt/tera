@@ -1,6 +1,17 @@
 serial,fechaRecibido,EstimadoEntrega,Estado,Descripción
-123,30 de julio de 2024,El resultado del diagnóstico determinará el tiempo estimado para la entrega del equipo,🔴 Diagnosticando,Se está diagnosticando el problema.
-124,1 de agosto de 2024,11 de agosto de 2024,🟡 En revisión,Se está interviniendo el equipo.
-125,3 de agosto de 2024,El resultado del diagnóstico determinará el tiempo estimado para la entrega del equipo,🔴 Diagnosticando,Se está diagnosticando el problema.
-126,9 de octubre de 2024,12 de octubre de 2024,🟡 Ensamblando,El ensamblaje está en progreso.
-127,12 de diciembre de 2024,Espera a que inicie el procedimiento para saber el tiempo estimado para recoger este equipo,🔴 No iniciado,El proceso no ha comenzado.
+TR01F6,30 de julio de 2024,El resultado del diagnóstico determinará el tiempo estimado para la entrega del equipo,🔴 En espera de revisión,El equipo está a la espera de ser revisado por el técnico. Le notificaremos cuando se inicie el diagnóstico.
+TR28Y1,1 de agosto de 2024,11 de agosto de 2024,🟡 Interviniendo,Se están realizando los ajustes necesarios. Como la limpieza interna del equipo y la migracicón de los datos a una nueva unidad SSD.
+TR31G7,3 de agosto de 2024,El resultado del diagnóstico determinará el tiempo estimado para la entrega del equipo,🔴 En espera de revisión,El técnico aún no ha iniciado la revisión del equipo. El sitio se actualizará cuando el proceso haya iniciado.
+TR60X8,9 de octubre de 2024,12 de octubre de 2024,🟢 Finalizado,La reparación ha sido completada con éxito. Su equipo está listo para ser recogido.
+TR40S0,12 de diciembre de 2024,Espera a que inicie el procedimiento para saber el tiempo estimado para recoger este equipo,🔴 En espera de revisión,El técnico aún no ha iniciado con la gestión. Verifique su código más tarde.
+TR15N8,14 de noviembre de 2024,22 de noviembre de 2024,🟢 Finalizado,El proceso se completó con éxito. Puede recoger su equipo cuando lo desee.
+TR99D9,15 de noviembre de 2024,El resultado del diagnóstico determinará el tiempo estimado para la entrega del equipo,🟠 Diagnosticando,Estamos analizando el equipo para identificar el problema. Se están realizando varias pruebas para asegurarnos de encontrar la mejor solución.
+TR73R8,16 de noviembre de 2024,24 de noviembre de 2024,🟢 Finalizado,La reparación ha finalizado con éxito. El equipo ya está disponible para ser recogido.
+TR88I0,17 de noviembre de 2024,25 de noviembre de 2024,🟡 Interviniendo,Estamos trabajando en su equipo. Se están realizando tareas de mantenimiento. Como la limpieza interna y la revisión de componentes para asegurarnos de que todo funcione correctamente.
+TR03X8,18 de noviembre de 2024,Espera a que inicie el procedimiento para saber el tiempo estimado para recoger este equipo,🔴 En espera de revisión,El equipo está esperando que el técnico inicie el proceso de diagnóstico.
+TR69U5,19 de noviembre de 2024,Espera a que inicie el procedimiento para saber el tiempo estimado para recoger este equipo,🔴 En espera de revisión,El proceso aún no ha comenzado. El técnico se pondrá en contacto para confirmar el inicio de la revisión.
+TR20H6,20 de noviembre de 2024,Espera a que inicie el procedimiento para saber el tiempo estimado para recoger este equipo,🔴 En espera de revisión,El equipo está a la espera de que el técnico comience con el diagnóstico. Verifique más tarde o consulte al soporte para obtener más información.
+TR83K9,21 de noviembre de 2024,El resultado del diagnóstico determinará el tiempo estimado para la entrega del equipo,🟠 Diagnosticando,Estamos realizando pruebas y diagnosticando el equipo para determinar el problema y la mejor solución. Le mantendremos informado sobre el progreso.
+TR00D9,22 de noviembre de 2024,El resultado del diagnóstico determinará el tiempo estimado para la entrega del equipo,🟠 Diagnosticando,Se está evaluando el equipo a fondo para identificar posibles fallos. Las pruebas están en curso y pronto tendremos una actualización.
+TR92Y5,23 de noviembre de 2024,29 de noviembre de 2024,🟢 Finalizado,La reparación se completó con éxito. El equipo está listo para ser entregado.
+TR81A5,24 de noviembre de 2024,5 de diciembre de 2024,🟢 Finalizado,El proceso de reparación ha finalizado con éxito. Su equipo está listo para ser entregado en el horario disponible.

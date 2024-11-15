@@ -47,6 +47,13 @@ h1, h2, h3, h4, h5, h6 {
     color: #2d61aa;
 }
 
+.centrado{
+    font-family: 'microgramma', sans-serif;
+    color: #2d61aa;
+    text-align: center;
+    
+}
+
 /*principal */
 .content {
     flex: 1;
@@ -346,7 +353,7 @@ button:hover {
     position: fixed;
     bottom: 30px;
     left: 100px; /* Ajusta este valor para desplazar el texto a la derecha */
-    background-color: #0b2d5d;
+    background-color: #1e4f92;
     color: white;
     border-radius: 15px;
     padding: 10px;
@@ -422,6 +429,7 @@ button:hover {
     background-color: #2d61aa;
     padding: 20px;
     color: white;
+    position: static;
     text-align: center;
 }
 
@@ -544,3 +552,223 @@ button:hover {
     line-height: 1.6;
 }
 
+/* Ajuste para la sección de contenido */
+.content-section {
+    display: flex;
+    justify-content: space-between;
+}
+
+.text-and-image-container {
+    display: flex;
+    width: 100%;
+    align-items: center;
+}
+
+.text-container {
+    flex: 1;
+    padding: 20px;
+}
+
+.side-image-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.side-image {
+    height: 45%; /* Ajusta la altura a la del contenedor de la sección */
+    width: 45%; /* Anchura automática para mantener la proporción */
+    flex: 0 0 auto;
+    padding: 10px;
+    animation: float 3s ease-in-out infinite; /* Añade la animación a la imagen */
+}
+
+/* Estilo para la línea separadora */
+.separator {
+    border: none;              /* Eliminar bordes predeterminados */
+    border-top: 2px solid #ccc; /* Línea sólida de 2px de grosor y color gris */
+    margin: 30px 0;             /* Espaciado superior e inferior */
+}
+
+
+/* Sección con imágenes en una fila y el fondo gris claro */
+.horizontal-images-section {
+    background-color: #e9e8e8;
+    padding: 40px;
+    display: flex;
+    justify-content: center;
+}
+
+/* Grid para las imágenes */
+.image-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 columnas */
+    grid-template-rows: repeat(2, auto); /* 2 filas */
+    gap: 20px;
+    animation: float 4s ease-in-out infinite; /* Añade la animación a la imagen */
+    max-width: 1000px; /* Máximo ancho del grid */
+}
+
+/* Propiedades para las imágenes */
+.image-grid img {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 1 / 1; /* Mantiene la proporción 1:1 */
+    object-fit: cover; /* Asegura que la imagen se ajuste sin distorsión */
+    border-radius: 8px; /* Esquinas redondeadas */
+}
+
+/* Estilos del modal */
+.modal-overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.8); /* Fondo oscuro */
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-overlay:target {
+    display: flex; /* Muestra el modal cuando es el objetivo */
+}
+
+.modal-content {
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    max-width: 300px;
+    text-align: left;
+}
+
+.close-modal {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 8px 16px;
+    background: #2d61aa;
+    color: #fff;
+    border-radius: 4px;
+    text-decoration: none;
+}
+
+
+
+
+
+
+/* Archivo estado.css */
+
+.estado {
+    display: flex;
+    justify-content: center; /* Centra la imagen horizontalmente */
+    margin: 20px 0;
+}
+
+.estado img {
+    
+    width: 22%; /* Asegura que la imagen no se desborde */
+    height: 22%; /* Mantiene la proporción de la imagen */
+    transition: transform 0.3s ease; /* Agrega una transición para efectos */
+}
+
+.estado img:hover {
+    transform: scale(1.1); /* Efecto de zoom al pasar el cursor */
+}
+
+/*ENLACE*/
+.link{
+    text-align: justify;
+    color: #1e4f92;
+    text-decoration: wavy;
+}
+
+body#seguimiento {
+    background-image: url("/static/main/resource/bg_alt.png");
+    background-size: cover;       /* La imagen cubrirá todo el fondo */
+    background-position: center;  /* Centra la imagen en la página */
+    background-repeat: no-repeat; /* Evita que la imagen se repita */
+    color: #fff;                  /* Cambia el color del texto si necesitas contraste */
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
+}
+
+
+
+/* Sección de redes sociales */
+.social-media-section {
+    text-align: center;
+    padding: 20px;
+    background-color: #f7f7f7; /* Color de fondo opcional */
+    margin: 20px 0;
+}
+
+.social-media-section h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+/* Contenedor de íconos */
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 20px; /* Espacio entre los íconos */
+}
+
+/* Estilo de cada ícono */
+.social-icon img {
+    width: 60px; /* Ajusta el tamaño según necesites */
+    height: 60px;
+    border-radius: 8px; /* Opcional: esquinas redondeadas */
+    transition: transform 0.2s ease; /* Transición suave */
+}
+
+/* Efecto de temblor en hover */
+.social-icon:hover img {
+    animation: shake 0.3s ease-in-out;
+    animation-iteration-count: infinite;
+}
+
+/* Tooltip */
+.social-icon {
+    position: relative;
+    text-decoration: none; /* Para quitar subrayado */
+}
+
+/* Tooltip aparece abajo */
+.social-icon::after {
+    content: attr(title); /* Muestra el contenido del título como tooltip */
+    position: absolute;
+    top: 100%; /* Cambia bottom a top para que el tooltip aparezca abajo */
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #333;
+    color: #fff;
+    padding: 5px 8px;
+    border-radius: 5px;
+    font-size: 12px;
+    white-space: nowrap;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.2s ease;
+    margin-top: 5px; /* Espacio entre el icono y el tooltip */
+}
+
+/* Muestra el tooltip al pasar el cursor */
+.social-icon:hover::after {
+    opacity: 1;
+    visibility: visible;
+}
+
+
+/* Animación de temblor */
+@keyframes shake {
+    0%, 50% { transform: translateX(0); }
+    25% { transform: translateX(-2px); }
+    50% { transform: translateX(2px); }
+    75% { transform: translateX(-2px); }
+}

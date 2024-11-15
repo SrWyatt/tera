@@ -1,13 +1,10 @@
-import csv
 from django.shortcuts import render
-from django.conf import settings
+import csv
 import os
+from django.conf import settings
 
 def index(request):
     return render(request, 'main/index.html')
-
-def seguimiento(request):
-    return render(request, 'main/seguimiento.html')
 
 def seguimiento(request):
     result = None

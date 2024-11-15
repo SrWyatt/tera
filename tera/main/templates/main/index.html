@@ -2,10 +2,11 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Inicio</title>
+    <title>TERA - Soluciones informáticas</title>
     {% load static %}
     <link rel="icon" href="{% static 'main/resource/teraFavicon.png' %}" type="image/png">
     <link rel="stylesheet" type="text/css" href="{% static 'main/css/styles.css' %}">
+    
 </head>
 <body background="171718">
     {% include 'main/navbar.html' %}
@@ -26,33 +27,168 @@
         </div>
     </div>
 
-    <br><br><br>
+    
 
     <!-- Sección nueva con imagen y texto -->
     <section class="content-section">
-        <div class="image-container">
-            <img src="{% static 'main/resource/rec_1.png' %}" alt="Recurso 1">
-        </div>
-        <div class="text-container">
-            <h1>¿Quienes somos?</h1>
-            <div class="card">
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed fringilla magna urna, sit amet euismod leo dapibus sit amet. Nam egestas lorem mauris. Curabitur et malesuada odio. Phasellus sollicitudin purus eu lacus sollicitudin convallis. Donec quis luctus ipsum. Fusce eget hendrerit elit. Nullam in suscipit justo. Proin nibh ipsum, fringilla in urna eu, tristique vestibulum risus. Pellentesque vel mi vel sapien condimentum scelerisque. Quisque vel mi mauris. Proin lobortis felis vitae sapien maximus, sit amet imperdiet elit egestas. Pellentesque eget libero quis mauris maximus pellentesque non molestie arcu. Fusce id porttitor nulla, vel facilisis arcu. In non lectus ullamcorper, rutrum odio ac, lobortis velit. Pellentesque eget quam bibendum, bibendum lorem ac, tincidunt diam. Nulla cursus tincidunt orci, et accumsan mi consectetur vitae.</p>
+        <div class="text-and-image-container">
+            <div class="image-container">
+                <img src="{% static 'main/resource/rec_1.png' %}" alt="Recurso 1">
             </div>
-        </div>
-    </section>
-    <br><br>
-    <section class="content-section">
-        <div class="image-container">
-            <img src="{% static 'main/resource/rec_1.png' %}" alt="Recurso 1">
-        </div>
-        <div class="text-container">
-            <h1>¿Quienes somos?</h1>
-            <div class="card">
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed fringilla magna urna, sit amet euismod leo dapibus sit amet. Nam egestas lorem mauris. Curabitur et malesuada odio. Phasellus sollicitudin purus eu lacus sollicitudin convallis. Donec quis luctus ipsum. Fusce eget hendrerit elit. Nullam in suscipit justo. Proin nibh ipsum, fringilla in urna eu, tristique vestibulum risus. Pellentesque vel mi vel sapien condimentum scelerisque. Quisque vel mi mauris. Proin lobortis felis vitae sapien maximus, sit amet imperdiet elit egestas. Pellentesque eget libero quis mauris maximus pellentesque non molestie arcu. Fusce id porttitor nulla, vel facilisis arcu. In non lectus ullamcorper, rutrum odio ac, lobortis velit. Pellentesque eget quam bibendum, bibendum lorem ac, tincidunt diam. Nulla cursus tincidunt orci, et accumsan mi consectetur vitae.</p>
+            <div class="text-container">
+                <h1>¿Quienes somos?</h1>
+                <div class="card">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi nec mattis arcu. Suspendisse malesuada nibh fermentum, consequat nulla non, placerat lorem. Morbi ac laoreet dui, id rutrum nisl. Phasellus gravida eros gravida, luctus tellus in, pretium risus. Etiam tristique pharetra lectus et maximus. Vivamus vitae neque vitae elit accumsan commodo vel sed arcu. Nam ultrices arcu in ligula viverra fermentum.
+
+                        Morbi faucibus, velit ut convallis malesuada, diam sem maximus mi, nec convallis turpis risus semper turpis. Aenean id est id tellus consequat placerat vel quis felis. Nulla lobortis dignissim enim, ut ornare leo imperdiet at. Quisque placerat nisl ligula, nec facilisis ligula elementum eget. Nulla bibendum ex elit. Mauris sed viverra lectus, a malesuada urna. Ut nulla metus, efficitur in luctus sed, ultrices interdum metus. Nullam sollicitudin, nibh vel sagittis lacinia, purus risus viverra libero, condimentum mollis ligula erat eget risus. Fusce at pretium augue. Quisque luctus dapibus arcu id consectetur. Maecenas lobortis imperdiet enim cursus bibendum. Sed non vulputate ex, eu pretium purus. Phasellus a interdum nibh.</p>
+                </div>
             </div>
+            <!-- Imagen adicional alineada a la derecha -->
+            
+            <a href="#referidos">
+                <div class="side-image-container">
+                    <img src="{% static 'main/resource/scan.png' %}" alt="Imagen adicional" class="side-image">
+                </div>
+            </a>
         </div>
     </section>
 
+    <hr class="separator">
+  
+    
+    <!-- Nueva sección con fondo azul y dos filas de imágenes -->
+    <h1 class="centrado">NUESTROS SERVICIOS</h1>
+    <section class="horizontal-images-section">
+        
+        
+        <div class="image-grid">
+
+            <a href="#software" class="clickable-image">
+                <img src="{% static 'main/resource/carrousel_a.png' %}" alt="Imagen A">
+            </a>
+            <a href="#reparacion" class="clickable-image">
+                <img src="{% static 'main/resource/carrousel_b.png' %}" alt="Imagen B">
+            </a>
+            <a href="#diagnostico" class="clickable-image">
+                <img src="{% static 'main/resource/carrousel_c.png' %}" alt="Imagen C">
+            </a>
+            <a href="#rendimiento" class="clickable-image">
+                <img src="{% static 'main/resource/carrousel_d.png' %}" alt="Imagen D">
+            </a>
+            <a href="#software" class="clickable-image">
+                <img src="{% static 'main/resource/carrousel_e.png' %}" alt="Imagen E">
+            </a>
+            <a href="#impresora" class="clickable-image">
+                <img src="{% static 'main/resource/carrousel_f.png' %}" alt="Imagen F">
+            </a>
+        </div>
+        <!-- inicio modal -->
+        <div id="software" class="modal-overlay">
+            <div class="modal-content">
+                <h2>ACTUALIZA TU SOFTWARE</h2>
+                <p>Nos encargamos de mantener el orden de tus programas
+                    y sistemas operativos, brindando el soporte, mantenimiento 
+                    y actualizaciones necesarias.
+                </p>
+                <a href="https://wa.me/50368596921" class="link" target="_blank">👉🏻 Más información</a><br>
+                <a href="#" class="close-modal">Ok</a>
+            </div>
+        </div>
+
+
+        <div id="reparacion" class="modal-overlay">
+            <div class="modal-content">
+                <h2>REPARAMOS TUS COMPONENTES</h2>
+                <p>Nuestra especialidad radica en dar el trato
+                    adecuado a cada elemento de tu equipo.
+                </p>
+                <a href="https://wa.me/50368596921" class="link" target="_blank">👉🏻 Más información</a><br>
+                <a href="#" class="close-modal">Ok</a>
+            </div>
+        </div>
+
+        <div id="diagnostico" class="modal-overlay">
+            <div class="modal-content">
+                <h2>DIAGNÓSTICO COMPLETO</h2>
+                <p>Haremos las pruebas necesarias para saber por qué
+                    tu equipo puede fallar, así mismo, brindamos todas
+                    las respuestas y soluciones que podemos seguir,
+                    incluyendo los respectivos reportes tras el diagnóstico.
+                </p>
+                <a href="https://wa.me/50368596921" class="link" target="_blank">👉🏻 Más información</a><br>
+                <a href="#" class="close-modal">Ok</a>
+            </div>
+        </div>
+
+        <div id="rendimiento" class="modal-overlay">
+            <div class="modal-content">
+                <h2>¿COMPUTADORA LENTA?</h2>
+                <p>Haremos que tu computadora recupere la mayor potencia
+                    posible, sacando el máximo provecho de un equipo
+                    que aún cuenta con un potencial de uso considerable.
+                </p>
+                <a href="https://wa.me/50368596921" class="link" target="_blank">👉🏻 Más información</a><br>
+                <a href="#" class="close-modal">Ok</a>
+            </div>
+        </div>
+
+        <div id="software" class="modal-overlay">
+            <div class="modal-content">
+                <h2>¿COMPUTADORA LENTA?</h2>
+                <p>Haremos que tu computadora recupere la mayor potencia
+                    posible, sacando el máximo provecho de un equipo
+                    que aún cuenta con un potencial de uso considerable.
+                </p>
+                <a href="https://wa.me/50368596921" class="link" target="_blank">👉🏻 Más información</a><br>
+                <a href="#" class="close-modal">Ok</a>
+            </div>
+        </div>
+
+        <div id="impresora" class="modal-overlay">
+            <div class="modal-content">
+                <h2>SERVICIO A IMPRESORAS</h2>
+                <p>Nos encargamos del mantenimiento respectivo
+                    a impresoras personales.
+                </p>
+                <a href="https://wa.me/50368596921" class="link" target="_blank">👉🏻 Más información</a><br>
+                <a href="#" class="close-modal">Ok</a>
+            </div>
+        </div>
+
+        
+        <div id="referidos" class="modal-overlay">
+            <div class="modal-content">
+                <h2>NUESTRO PROGRAMA</h2>
+                <p>¡Consigue hasta $10 dólares en descuentos!</p>
+                <p> Recomienda nuestros servicios a tus amigos y ambos 
+                    conseguirán este descuento en su próximo servicio.</p>
+                <a href="https://wa.me/50368596921" class="link" target="_blank">👉🏻 Más información</a><br>
+                <a href="#" class="close-modal">Ok</a>
+            </div>
+        </div>
+
+        <!-- fin modal -->
+    </section>
+
+    <section class="social-media-section">
+        <h1>SÍGUENOS EN REDES SOCIALES</h1>
+        <div class="social-icons">
+            <a href="https://wa.me/50368596921" class="social-icon" title="(503) 6859 6921" target="_blank">
+                <img src="{% static 'main/resource/ico_wpp.png' %}" alt="WhatsApp">
+            </a>
+            <a href="http://facebook.com/terasv" class="social-icon" title="/TeraSV" target="_blank">
+                <img src="{% static 'main/resource/ico_fb.png' %}" alt="Facebook">
+            </a>
+            <a href="https://www.instagram.com/terasv_" class="social-icon" title="@terasv_" target="_blank">
+                <img src="{% static 'main/resource/ico_ig.png' %}" alt="Instagram">
+            </a>
+            <a href="http://tiktok.com/@terasv_" class="social-icon" title="terasv_" target="_blank">
+                <img src="{% static 'main/resource/ico_tt.png' %}" alt="TikTok">
+            </a>
+        </div>
+    </section>
+    
+ 
     {% include 'main/footer.html' %}
     <script src="{% static 'main/scripts/scripts.js' %}"></script>
 </body>

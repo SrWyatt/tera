@@ -5,10 +5,17 @@
     {% load static %}
     <link rel="icon" href="{% static 'main/resource/teraFavicon.png' %}" type="image/png">
     <link rel="stylesheet" type="text/css" href="{% static 'main/css/styles.css' %}">
+
+
+
 </head>
-<body id="seguimiento">
+<body id="seguimiento" >
     {% include 'main/navbar.html' %}
     
+    
+
+   <section>
+
     <div class="content {% if result %}show-content{% endif %}">
         <h1 class="seguimiento">SEGUIMIENTO</h1>
         <form method="post">
@@ -23,28 +30,41 @@
         </form>
 
         {% if result %}
-        <div class="result-container">
-            <div class="result-row">
-                <div class="result-box-wrapper">
-                    <label>Fecha de ingreso:</label>
-                    <div class="result-box">{{ result.fechaRecibido }}</div>
-                </div>
-                <div class="result-box-wrapper">
-                    <label>Estimado de entrega:</label>
-                    <div class="result-box">{{ result.EstimadoEntrega }}</div>
-                </div>
-                <div class="result-box-wrapper">
-                    <label>Estado:</label>
-                    <div class="result-box">{{ result.Estado }}</div>
-                </div>
+            <div class="estado">
+                {% if result.Estado == '🟢 Finalizado' %}
+                    <img src="{% static 'main/resource/b_finalizado.png' %}" alt="Finalizado">
+                {% elif result.Estado == '🟡 Interviniendo' %}
+                    <img src="{% static 'main/resource/b_interviniendo.png' %}" alt="Interviniendo">
+                {% elif result.Estado == '🔴 En espera de revisión' %}
+                    <img src="{% static 'main/resource/b_no_iniciado.png' %}" alt="No iniciado">
+                {% elif result.Estado == '🟠 Diagnosticando' %}
+                    <img src="{% static 'main/resource/b_diagnosticando.png' %}" alt="Diagnosticando">
+                {% endif %}
             </div>
-            <div class="result-box-wrapper">
-                <label>Descripción:</label>
-                <div class="result-box description-box">{{ result.Descripción }}</div>
-            </div>
-        </div>
-        {% endif %}
         
+
+            <div class="result-container">
+                <div class="result-row">
+                    <div class="result-box-wrapper">
+                        <label>Fecha de ingreso:</label>
+                        <div class="result-box">{{ result.fechaRecibido }}</div>
+                    </div>
+                    <div class="result-box-wrapper">
+                        <label>Estimado de entrega:</label>
+                        <div class="result-box">{{ result.EstimadoEntrega }}</div>
+                    </div>
+                    <div class="result-box-wrapper">
+                        <label>Estado:</label>
+                        <div class="result-box">{{ result.Estado }}</div>
+                    </div>
+                </div>
+                <div class="result-box-wrapper">
+                    <label>Descripción:</label>
+                    <div class="result-box description-box">{{ result.Descripción }}</div>
+                </div>
+            </div>
+            
+        {% endif %}
     </div>
     
     <!-- Menú Flotante -->
@@ -52,9 +72,9 @@
         <div class="menu-header">CONTÁCTANOS</div>
         <div class="separator"></div>
         <ul>
-            <li><a href="https://x.com/home" class="menu-item"><img src="{% static 'main/resource/Whatsapp_ico.png' %}" alt="Icon" class="menu-icon"> Whatsapp</a></li>
-            <li><a href="https://x.com/home" class="menu-item"><img src="{% static 'main/resource/Instagram_ico.png' %}" alt="Icon" class="menu-icon"> Instagram</a></li>
-            <li><a href="https://x.com/home" class="menu-item"><img src="{% static 'main/resource/Facebook_ico.png' %}" alt="Icon" class="menu-icon"> Facebook</a></li>
+            <li><a href="https://wa.me/50368596921" class="menu-item"><img src="{% static 'main/resource/Whatsapp_ico.png' %}" alt="Icon" class="menu-icon"> Whatsapp</a></li>
+            <li><a href="https://www.instagram.com/terasv_" class="menu-item"><img src="{% static 'main/resource/Instagram_ico.png' %}" alt="Icon" class="menu-icon"> Instagram</a></li>
+            <li><a href="http://facebook.com/terasv" class="menu-item"><img src="{% static 'main/resource/Facebook_ico.png' %}" alt="Icon" class="menu-icon"> Facebook</a></li>
         </ul>
     </div>
 
@@ -65,7 +85,11 @@
 
     <div class="contact-tooltip">👈🏻 Ayuda</div>
 
-    <script src="{% static 'main/scripts/scripts.js' %}"></script>
-    
+
+   </section>
+
+
+   <script src="{% static 'main/scripts/scripts.js' %}"></script>
+
 </body>
 </html>
